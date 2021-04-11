@@ -2,25 +2,22 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name = "author" content = "me">
+        <meta name = "author" content = "Brian Seo">
         <title>Brian Seo's Lab2</title>
-        <link rel = "music" href = "music.png" type = "image/png">
+        <link rel = "icon" href = "music.png" type = "image/png">
     </head>
     <body>
         <header>
             <h1 id = "head"> Journals </h1>
             <i>
-                I will be a writing a summary of my last three days in this document.
+                I will be a writing a summary of my last three days in this document.<br>
             </i>
-            <nav>
-
-            </nav>
         </header>
         <main>
             <details>
                 <summary> About me</summary>
-                <p> Hi, my name is Brian Seo and I'm a third year student at UCSD studying math and computer science. 
-                    I was born and raised in San Diego. I love the weather here and how the beach is so accessible and
+                <p> Hi, my name is Brian Seo and I'm a <b>third year</b> student at UCSD studying math and computer science. 
+                    I was born and raised in <span style = "color:purple"> San Diego.</span> I love the weather here and how the beach is so accessible and
                 convienent to go to.</p>
             </details>
             <section>
@@ -29,8 +26,12 @@
                     <br>
                 </em>
                 <a href = "https://www.linkedin.com/in/brian-seo/"> Connect with me on LinkedIn!</a>
-              <hr>
+              
             </section>
+            <nav>
+                <a href = "https://github.com/brianseo718/Lab2"> <br>GitHub!</a>
+                <hr>
+            </nav>
             <div class="day1">
                 <h2 id = "day1"> Day 1 Journal</h2>
             
@@ -41,8 +42,8 @@
                     <br>Today was a pretty eventful day for me. It started off by me going to my comp sci two lectures 
                     in the morning. Afterwards, I made lunch and played some card games with my housemates to kill time. 
                     Then, I proceeded to do some homework for the day up until 6 pm. After that, I left the house to go hang out 
-                    with some of my friends from college. My friend Kristy and I went to the restaurant Cross Street and then
-                    we got boba at Happy Lemon. We went back to her apartment and my other friend Max came as well and we all
+                    with some of my friends from college. My friend <strong>Kristy</strong> and I went to the restaurant Cross Street and then
+                    we got boba at <em>Happy Lemon.</em> We went back to her apartment and my other friend Max came as well and we all
                     caught up because we haven't seen each other in a while. 
                 </section>
                 <img src = "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_auto,h_168,c_pad,fl_lossy,f_auto/ix9fwfmofmgyw7mwlqk2" width = 100>
@@ -56,8 +57,8 @@
                 <p>
                     Today was a very fun day because it was the first day of the weekend! IT started off by me going to my two
                     classes as per usual and I had to do my math homework for a couple hours. After I completed that and I 
-                    worked on this lab for enough time, I went to my friends apartment for the night. I got to try his Oculus Rift 
-                    VR set for the first time and it was mindblowing. I was in a boxing arena fighting a CPU and then 5 minutes later
+                    worked on this lab for enough time, I went to my friends apartment for the night. I got to try his <i><b>Oculus Rift VR</b></i>
+                     set for the first time and it was mindblowing. I was in a boxing arena fighting a CPU and then 5 minutes later
                     I was traveling through space and Mars. I really want to get a VR set after today because of the endless possibilities 
                     we will see from them in the next couple of years. 
                 </p>
@@ -70,7 +71,7 @@
                     April 10th, 2021
                 </b>
                 <p>
-                    Saturday was a pretty lazy day for me. I woke up late from being out the day before. I woke up and some of my 
+                    Saturday was a pretty <em>lazy</em> day for me. I woke up late from being out the day before. I woke up and some of my 
                     friends were already at my house with my housemates. We were all catching up and playing some sports in our
                     backyard. I had to do some homework in between though so I was doing homework from about 3-7pm. Afterwards, 
                     we decided to drink at our house and play some videogames in the house. It was really fun and I'm glad 
@@ -107,22 +108,21 @@
             <section>
                 <br> Here's me walking my dog this week!
             </section>
-            <video width = "656" height = "1232" controls>
-                <source src = "dogvid2.mp4" type = "video/mp4">
-                <source src = "dogvid2.ogg" type = "video/ogg">
-                <source src = "dogvid2.webm" type = "video/webm">
-            Your browswer does not support the video tag.
-
+            <video width = "1200" height = "400" controls>
+                <source src = "tombstone.mp4">
             </video>
             
         </main>
         <footer>
             <form>
-                <hr>
+                <fieldset>
+                
                 <label for="title">Create a Journal:</label><br>
                 <input type = "date" id="start" name = "journal-date" 
                 value = "2021-04-11" min = "2021-01-01" max = "2021-12-31"><br>
-                <br><input type = "text" placeholder="Enter journal text"  size = 100/><br>  
+                <br><input type = "text" placeholder="Enter journal title"/><br> 
+                <br>
+                <textarea rows = "5" cols = "50">Enter your journal here </textarea> 
                 
             </form>
             <form>
@@ -134,11 +134,32 @@
                 <input type="radio" id="other" name="gender" value="other">
                 <label for="other">Other</label>
             </form>
+            <br>
+
+            <label for = "exercise"> How much exercise did you get today?</label>
+            <input list = "exercises" name = "exercise" id = "exercise">
+            <datalist id = "exercises">
+                <option value= "0 hours">
+                <option value = "1-3 hours">
+                <option value = "3-5 hours">
+            </datalist>
+            <br>
+            <label for="rating">Rate your day on a scale of 1-5:</label>
+            <select name = "rating" id = "rating">
+                <option value = "1">1</option>
+                <option value = "2">2</option>
+                <option value = "3">3</option>
+                <option value = "4">4</option>
+                <option value = "5">5</option>
+            </select>
+
             <form>
                 <br>
                 <input type = "checkbox" id = "checker" name = "checker" value="check">
                 <label for ="checkbox"> I have completed my journal entry with the correct date.</label><br>
-                <input type = "submit" value = "Submit">
+                
+                <button type = "button"> Submit</button>
+            </fieldset>
             </form>
         </footer>
 
