@@ -93,6 +93,7 @@
                         <li> Rapstar by Polo G</li>
                         <li> Silver Tongue Devil by Masego</li>
                     </ol>
+                    <hr>
                 </h5>
             </div>
             <section>
@@ -109,16 +110,35 @@
             <video width = "656" height = "1232" controls>
                 <source src = "dogvid2.mp4" type = "video/mp4">
                 <source src = "dogvid2.ogg" type = "video/ogg">
+                <source src = "dogvid2.webm" type = "video/webm">
             Your browswer does not support the video tag.
 
             </video>
             
         </main>
         <footer>
-            <h6 id = "journalform"> Create a journal</h6>
-            <form onsubmit="alert('Created')">
-                <input type = "text" placeholder="Enter journal text" />
-                <button> Submit</button>
+            <form>
+                <hr>
+                <label for="title">Create a Journal:</label><br>
+                <input type = "date" id="start" name = "journal-date" 
+                value = "2021-04-11" min = "2021-01-01" max = "2021-12-31"><br>
+                <br><input type = "text" placeholder="Enter journal text"  size = 100/><br>  
+                
+            </form>
+            <form>
+                What is your specified gender?<br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label><br>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </form>
+            <form>
+                <br>
+                <input type = "checkbox" id = "checker" name = "checker" value="check">
+                <label for ="checkbox"> I have completed my journal entry with the correct date.</label><br>
+                <input type = "submit" value = "Submit">
             </form>
         </footer>
 
