@@ -46,7 +46,7 @@
                     we got boba at <em>Happy Lemon.</em> We went back to her apartment and my other friend Max came as well and we all
                     caught up because we haven't seen each other in a while. 
                 </section>
-                <img src = "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_auto,h_168,c_pad,fl_lossy,f_auto/ix9fwfmofmgyw7mwlqk2" width = 100>
+                <img src = "https://res.cloudinary.com/grubhub/image/upload/d_search:browse-images:default.jpg/w_auto,h_168,c_pad,fl_lossy,f_auto/ix9fwfmofmgyw7mwlqk2" alt = "boba" width = 100>
                 <hr>
             </div>
             <div class="day2">
@@ -62,7 +62,7 @@
                     I was traveling through space and Mars. I really want to get a VR set after today because of the endless possibilities 
                     we will see from them in the next couple of years. 
                 </p>
-                <img src = "https://images-na.ssl-images-amazon.com/images/I/61ahfXnBa0L._SX466_.jpg" width = 100>
+                <img src = "https://images-na.ssl-images-amazon.com/images/I/61ahfXnBa0L._SX466_.jpg" alt = "vr" width = 100>
                 <hr>
             </div>
             <div class="day3">
@@ -95,7 +95,7 @@
                         <li> Silver Tongue Devil by Masego</li>
                     </ol>
                     <hr>
-                </h5>
+                
             </div>
             <section>
                 <br>Here's a beat that I made this last week!
@@ -114,53 +114,56 @@
             
         </main>
         <footer>
-            <form>
-                <fieldset>
+            <fieldset>
+                <form>
                 
-                <label for="title">Create a Journal:</label><br>
-                <input type = "date" id="start" name = "journal-date" 
-                value = "2021-04-11" min = "2021-01-01" max = "2021-12-31"><br>
-                <br><input type = "text" placeholder="Enter journal title"/><br> 
+                    <label for="title">Create a Journal:</label><br>
+                    <input type = "date" id="start" name = "journal-date" 
+                    value = "2021-04-11" min = "2021-01-01" max = "2021-12-31"><br>
+                    <br><input type = "text" placeholder="Enter journal title"/><br> 
+                    <br>
+                    <textarea rows = "5" cols = "50">Enter your journal here </textarea> 
+                    
+                    <br>
+    
+                
+                    What is your specified gender?<br>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </form>
                 <br>
-                <textarea rows = "5" cols = "50">Enter your journal here </textarea> 
-                
-            </form>
-            <form>
-                What is your specified gender?<br>
-                <input type="radio" id="male" name="gender" value="male">
-                <label for="male">Male</label><br>
-                <input type="radio" id="female" name="gender" value="female">
-                <label for="female">Female</label><br>
-                <input type="radio" id="other" name="gender" value="other">
-                <label for="other">Other</label>
-            </form>
-            <br>
-
-            <label for = "exercise"> How much exercise did you get today?</label>
-            <input list = "exercises" name = "exercise" id = "exercise">
-            <datalist id = "exercises">
-                <option value= "0 hours">
-                <option value = "1-3 hours">
-                <option value = "3-5 hours">
-            </datalist>
-            <br>
-            <label for="rating">Rate your day on a scale of 1-5:</label>
-            <select name = "rating" id = "rating">
-                <option value = "1">1</option>
-                <option value = "2">2</option>
-                <option value = "3">3</option>
-                <option value = "4">4</option>
-                <option value = "5">5</option>
-            </select>
-
-            <form>
+    
+                <label for = "exercise"> How much exercise did you get today?</label>
+                <input list = "exercises" name = "exercise" id = "exercise">
+                <datalist id = "exercises">
+                    <option value= "0 hours">
+                    <option value = "1-3 hours">
+                    <option value = "3-5 hours">
+                </datalist>
                 <br>
-                <input type = "checkbox" id = "checker" name = "checker" value="check">
-                <label for ="checkbox"> I have completed my journal entry with the correct date.</label><br>
+                <label for="rating">Rate your day on a scale of 1-5:</label>
+                <select name = "rating" id = "rating">
+                    <option value = "1">1</option>
+                    <option value = "2">2</option>
+                    <option value = "3">3</option>
+                    <option value = "4">4</option>
+                    <option value = "5">5</option>
+                </select>
+    
+                <form>
+                    <br>
+                    <input type = "checkbox" id = "checker" name = "checker" value="check">
+                    <label for ="checkbox"> I have completed my journal entry with the correct date.</label><br>
+                    
+                    <button type = "button"> Submit</button>
                 
-                <button type = "button"> Submit</button>
+                </form>
             </fieldset>
-            </form>
+            
         </footer>
 
     </body>
