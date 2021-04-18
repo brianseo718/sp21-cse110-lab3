@@ -1,0 +1,82 @@
+* {
+    background-color: rosybrown;
+}
+h2{
+    color:#5adf5aa1;
+    text-decoration: underline overline;
+    text-align: center;
+
+}
+.day1{
+    font-size:1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    position: static;
+    
+}
+.day1pics{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:40px;
+    grid-auto-rows:minmax(150px, auto);
+}
+h3{
+    text-decoration: underline;
+    text-align: center;
+    display:block;
+    background-color: rgba(158, 42, 158, 0.705);
+
+}
+.day2{
+    font-size:1.2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+    border-top:5px dotted black;
+    border-right:2px solid blue;
+    padding-top:0.5em;
+    padding-bottom:0.5em;
+}
+h4{
+    display:inline-block;
+    text-decoration: underline;
+    color:skyblue;
+    text-align: center;
+    font-size: 5ex;
+    margin-top:20px;
+}
+h6{
+    font-size:1.5em;
+}
+.day3{
+    font-size: 1.2rem;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    position: relative;
+    margin:20px;
+}
+.todolist{
+    border-width: 4px;
+    border-style: dotted;
+    border-color:darkblue;
+    border-radius: 1cm;
+    padding: .5em;
+}
+.songs{
+    color:orange;
+    display:flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    align-items: baseline;
+}
+ul{
+    background-color:white;
+}
+@media only screen and (max-width: 500 px) and (orientation:landscape) {
+    section{
+        background-color: red;
+    }
+}
+button:hover{
+    background-color:blue;
+}
+button:active{
+    background-color:red;
+}
