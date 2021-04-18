@@ -1,11 +1,14 @@
 * {
-    background-color: rosybrown;
+    background-color: rgb(245, 212, 212);
 }
 a[href*="linkedin"]{
     background-color: white;
 }
 details > p {
     color:rgba(255, 223, 82, 0.932)
+}
+h1.head{
+    font-family: fantasy;
 }
 #h2{
     color:#5adf5aa1;
@@ -25,12 +28,16 @@ details > p {
     gap:40px;
     grid-auto-rows:minmax(150px, auto);
 }
+
 h3{
     text-decoration: underline;
     text-align: center;
     display:block;
     background-color: rgba(158, 42, 158, 0.705);
 
+}
+h3 + p {
+    font-style: italic;
 }
 .day2{
     font-size:1.2em;
@@ -40,6 +47,9 @@ h3{
     border-right:2px solid blue;
     padding-top:0.5em;
     padding-bottom:0.5em;
+}
+.day2 p{
+    background-color: beige;
 }
 .day2pics{
     display:flex;
@@ -75,9 +85,11 @@ h6{
     color:orange;
 }
 ul,ol{
-    background-color:white;
     font-weight: bolder;
     font-style: italic;
+}
+h7~section{
+    font-weight: bold;
 }
 @media only screen and (max-width: 500 px) and (orientation:landscape) {
     section{
