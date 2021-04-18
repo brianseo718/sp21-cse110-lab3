@@ -68,8 +68,8 @@ ul{
     }
 }
 button:hover{
-    color:blue;
+    background-color:blue;
 }
 button:active{
-    color:red;
+    background-color:red;
 }
