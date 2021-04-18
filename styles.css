@@ -1,105 +1,136 @@
+/* universal background */
 * {
     background-color: rgb(245, 212, 212);
 }
+/* change link color */
 a[href*="linkedin"]{
     background-color: white;
 }
+/* about me color */
 details > p {
     color:rgba(228, 188, 9, 0.932)
 }
-h1.head{
-    font-family: Impact;
-}
-#h2{
+/* day1 journal title */
+#day1{
     color:#5adf5aa1;
     text-decoration: underline overline;
     text-align: center;
 
 }
+/* day 1 journal class */
 .day1{
-    font-size:1.5em;
+    font-size:1.2em;
     font-family: Arial, Helvetica, sans-serif;
     position: static;
     
 }
+/* pictures for day1 */
 .day1pics{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
     gap:40px;
     grid-auto-rows:minmax(150px, auto);
 }
-
+/* day2 journal title */
 h3{
     text-decoration: underline;
     text-align: center;
+    background-color: rgb(240, 159, 10);
     display:block;
-    background-color: rgba(158, 42, 158, 0.705);
+
 
 }
-h3 + p {
-    font-style: italic;
-}
+/* day 2 class */
 .day2{
     font-size:1.2em;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin:auto;
     border-top:5px dotted black;
     border-right:2px solid blue;
-    padding-top:0.5em;
+    padding-top:0.2em;
     padding-bottom:0.5em;
 }
+/* background color for journals */
 .day2 p, .day3 p, .day1 section {
     background-color: beige;
 }
+/* pictures for day 2 journal */
 .day2pics{
     display:flex;
     flex-wrap:wrap;
     flex-direction:row;
     align-items:baseline;
 }
+/* day 3 journal header */
 h4{
     display:inline-block;
     text-decoration: underline;
-    color:skyblue;
+    color:hsl(100,20,30);
     text-align: center;
-    border-top:5px groove rgb(129, 3, 3);
+    border-radius: 0.2in;
+    border-top:10px groove rgb(129, 3, 3);
+    border-bottom:10px groove rgb(129, 3, 3);
     font-size: 3ex;
     margin-top:20px;
 }
+/* To do list header */
 h6{
     font-size:1.5em;
 }
+/* day 3 journal entry */
 .day3{
     font-size: 1.2rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: relative;
     margin:20px;
 }
+/* first and second song in list */
+li:first-of-type + li {
+    color:rgb(129, 3, 3);
+}
+/* to do list class */
 .todolist{
     border-width: 4px;
     border-style: dotted;
     border-color:darkblue;
-    border-radius: 1cm;
+    border-radius: 0.5cm;
     padding: .2em;
 }
+/* favorite songs of the week list */
 .songs{
-    color:orange;
+    color:rgb(240, 159, 10);
 }
+/* song list section*/
+div.songs{
+    background-color: #85c6f1;
+}
+/* music video sizing */
+video{
+    width:900px ;
+    height:400px;
+    max-width:1000;
+    max-height:1500;
+}
+/* to do list and favorite song list */
 ul,ol{
     font-weight: bolder;
     font-style: italic;
 }
-h6~section {
-    font-weight: bold;
+/* to do list after header */
+h6~ul {
+    text-decoration: underline;
 }
+/* media query responsiveness */
 @media only screen and (max-width: 500 px) and (orientation:landscape) {
     section{
         background-color: red;
     }
 }
+/* submit button hover */
 button:hover{
     background-color:blue;
 }
+/* submit button active */
 button:active{
     background-color:red;
 }
