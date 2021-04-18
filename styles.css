@@ -1,7 +1,13 @@
 * {
     background-color: rosybrown;
 }
-h2{
+a[href*="linkedin"]{
+    background-color: white;
+}
+details > p {
+    color:rgba(255, 223, 82, 0.932)
+}
+#h2{
     color:#5adf5aa1;
     text-decoration: underline overline;
     text-align: center;
@@ -35,12 +41,18 @@ h3{
     padding-top:0.5em;
     padding-bottom:0.5em;
 }
+.day2pics{
+    display:flex;
+    flex-wrap:wrap;
+    flex-direction:row;
+    align-items:baseline;
+}
 h4{
     display:inline-block;
     text-decoration: underline;
     color:skyblue;
     text-align: center;
-    font-size: 5ex;
+    font-size: 3ex;
     margin-top:20px;
 }
 h6{
@@ -57,17 +69,15 @@ h6{
     border-style: dotted;
     border-color:darkblue;
     border-radius: 1cm;
-    padding: .5em;
+    padding: .2em;
 }
 .songs{
     color:orange;
-    display:flex;
-    flex-direction: column;
-    flex-wrap:wrap;
-    align-items: baseline;
 }
-ul{
+ul,ol{
     background-color:white;
+    font-weight: bolder;
+    font-style: italic;
 }
 @media only screen and (max-width: 500 px) and (orientation:landscape) {
     section{
