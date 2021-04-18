@@ -13,6 +13,12 @@ h2{
     position: static;
     
 }
+.day1pics{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:15px;
+    grid-auto-rows:minmax(150px, auto);
+}
 h3{
     text-decoration: underline;
     text-align: center;
@@ -34,11 +40,14 @@ h4{
     text-decoration: underline;
     color:skyblue;
     text-align: center;
+    font-size: 1ex;
+    margin-top:20px;
 }
 .day3{
     font-size: 1.2rem;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     position: relative;
+    margin:20px;
 }
 .todolist{
     border-width: 4px;
