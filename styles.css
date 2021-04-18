@@ -1,10 +1,10 @@
-h1{
-    color:rgb(10,100,0);
-    margin-left:400px;
-    font-size:3cm;
+* {
+    background-color: rosybrown;
 }
 h2{
     color:#5adf5aa1;
+    text-decoration: underline overline;
+    text-align: center;
 
 }
 .day1{
@@ -17,6 +17,7 @@ h3{
     text-decoration: underline;
     text-align: center;
     display:block;
+    background-color: rgba(158, 42, 158, 0.705);
 
 }
 .day2{
@@ -40,4 +41,9 @@ h3{
 }
 ul{
     background-color:white;
+}
+@media only screen and (max-width: 500 px) and (orientation:landscape) {
+    section{
+        background-color: red;
+    }
 }
