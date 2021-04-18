@@ -1,8 +1,20 @@
 body{
-    background-color: lightcyan;
+    background-color: hsl(180,100,93.92);
 }
 
 h1{
-    color: green;
-    margin-left:20px;
+    color:rgb(10,100,0);
+    margin-left:100px;
+    font-size:2cm;
+}
+h2{
+    color:#00ff00;
+
+}
+.day1{
+    font-size:2em;
+}
+.todolist{
+    border:2px solid royalblue;
+    padding: .5em;
 }
