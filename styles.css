@@ -58,3 +58,9 @@ ul{
         background-color: red;
     }
 }
+button:hover{
+    color:blue;
+}
+button:active{
+    color:red;
+}
