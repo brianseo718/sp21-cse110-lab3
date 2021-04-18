@@ -16,7 +16,7 @@ h2{
 .day1pics{
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap:15px;
+    gap:40px;
     grid-auto-rows:minmax(150px, auto);
 }
 h3{
